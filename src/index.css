@@ -7,5 +7,21 @@
 
 * {
     font-family: 'JetBrains Mono', monospace;
-    background-color: #101214;
+}
+
+/* Styles de la barre de défilement */
+::-webkit-scrollbar {
+    width: 8px; /* Largeur de la barre de défilement */
+}
+
+/* Styles du curseur de la barre de défilement */
+::-webkit-scrollbar-thumb {
+    color: azure;
+    background-color: rgba(255, 255, 255, 0.1); /* Couleur transparente du curseur */
+    border-radius: 4px; /* Bord arrondi du curseur */
+}
+
+/* Styles du curseur de la barre de défilement lors du survol */
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* Couleur grise légèrement transparente lors du survol */
 }
