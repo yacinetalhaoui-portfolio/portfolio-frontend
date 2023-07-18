@@ -21,6 +21,7 @@ const Project = () => {
                     <div className="flex flex-col gap-5">
                         <div className="flex flex-col gap-5">
                             <span className="text-secondary text-2xl">Contexte : {project.context}</span>
+                            {/* eslint-disable-next-line react/no-unescaped-entities */}
                             <span className="text-secondary text-xl">Taille de l'équipe : {project.team_size}</span>
                             <span className="text-secondary text-xl">Objectif : {project.objective}</span>
                             <span className="text-secondary text-xl">Description : {project.description}</span>

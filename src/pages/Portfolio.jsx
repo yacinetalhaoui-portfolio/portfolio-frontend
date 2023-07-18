@@ -1,5 +1,4 @@
 import Sidebar from "../components/Sidebar.jsx";
-import Project from "./Project.jsx";
 import Navbar from "../components/Navbar.jsx";
 import {Link} from "react-router-dom";
 
