@@ -69,7 +69,7 @@ const Portfolio = () => {
     return (
         <div className="grid max-h-screen grid-cols-[1fr_3fr]">
             <Sidebar/>
-            <div className="max-h-screen overflow-y-scroll">
+            <div className="h-screen overflow-y-scroll">
                 <Navbar/>
                 <div className=" flex flex-col gap-10">
                     <h1 className="text-white text-3xl text-center">Projets</h1>

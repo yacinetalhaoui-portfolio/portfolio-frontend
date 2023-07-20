@@ -4,9 +4,9 @@ import Skills from "../components/Skills.jsx";
 
 const About = () => {
     return (
-        <div className="grid min-h-screen grid-cols-[1fr_3fr]">
+        <div className="h-screen grid grid-cols-[1fr_3fr]">
             <Sidebar/>
-            <div className="grid grid-rows-[2fr_15fr] gap-8 justify-center overflow-y-scroll">
+            <div className=" overflow-y-scroll">
                 <Navbar/>
                 <div className="flex flex-col p-10 gap-8">
                     <h1 className="text-4xl font-bold text-white">Qui suis-je ?</h1>
