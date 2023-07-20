@@ -4,6 +4,7 @@ import About from "./pages/About.jsx";
 import Portfolio from "./pages/Portfolio.jsx";
 import Project from "./pages/Project.jsx";
 import Skills from "./components/Skills.jsx";
+import Experiences from "./pages/Experiences.jsx";
 
 const App = () => {
     return (
@@ -14,7 +15,7 @@ const App = () => {
                     <Route path="/about" element={<About/>}/>
                     <Route path="/portfolio" element={<Portfolio/>}/>
                     <Route path="/portfolio/:name" element={<Project/>}></Route>
-                    <Route path="/skills" element={<Skills/>}></Route>
+                    <Route path="/experiences" element={<Experiences/>}></Route>
                 </Routes>
             </Router>
         </div>

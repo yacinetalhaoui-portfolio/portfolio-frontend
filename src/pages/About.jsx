@@ -1,6 +1,7 @@
 import Sidebar from "../components/Sidebar.jsx";
 import Navbar from "../components/Navbar.jsx";
 import Skills from "../components/Skills.jsx";
+import Education from "../components/Education.jsx";
 
 const About = () => {
     return (
