@@ -11,6 +11,13 @@ export default withMT({
     extend: {
       colors: {
         secondary: "#7a7c80"
+      },
+      screens: {
+        'tablet': '768px',
+        'desktop': '1024px',
+        'mid-desktop': '1140px',
+        'big-desktop': '1440px',
+        '2big-desktop': '2550px',
       }
     },
   },
