@@ -14,6 +14,7 @@ export default withMT({
       },
       screens: {
         'tablet': '768px',
+        'mid-tablet': '960px',
         'desktop': '1024px',
         'mid-desktop': '1140px',
         'big-desktop': '1440px',
