@@ -2,6 +2,7 @@ import Sidebar from "../components/Sidebar.jsx";
 import Navbar from "../components/Navbar.jsx";
 import {Link} from "react-router-dom";
 import {useEffect, useState} from "react";
+import {project_service} from "../services/project.service.js";
 
 const Portfolio = () => {
 
@@ -13,12 +14,8 @@ const Portfolio = () => {
 
     const fetchProjects = async () => {
         try {
-            const response = await fetch('http://localhost:3001/project'); // Replace with your actual backend API URL
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            const data = await response.json();
-            setProjects(data);
+            const response = await project_service.getProjects();
+            setProjects(response.data);
         } catch (error) {
             console.error('Fetch error:', error);
         }

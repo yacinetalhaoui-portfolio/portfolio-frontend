@@ -1,7 +1,7 @@
 import React from "react";
 import {useLocation} from "react-router-dom";
-import Sidebar from "../components/Sidebar.jsx";
-import Navbar from "../components/Navbar.jsx";
+import Sidebar from "./Sidebar.jsx";
+import Navbar from "./Navbar.jsx";
 
 const Project = () => {
 
@@ -31,13 +31,13 @@ const Project = () => {
                             <span className="text-secondary text-2xl">Contexte : {project.context}</span>
                             <span className="text-secondary text-xl">Taille de l'équipe : {project.team_size}</span>
                             <span className="text-secondary text-xl">Objectif : {project.objective}</span>
-                            {project.github_org_link !== "" && project.organisation_description !== "" && (
+                            {project.organization_description !== "" && (
                                 <div className="my-3 text-secondary text-xl flex flex-col gap-4">
-                                    <span>{project.organisation_description}</span>
+                                    <span>{project.organization_description}</span>
                                 </div>
                             )}
                             <span className="text-secondary text-xl">{project.description}</span>
-                            {project.github_org_link !== "" && project.organisation_description !== "" && (
+                            {project.github_org_link !== "" && (
                                 <a href={project.github_org_link} className="text-white text-2xl text-left">
                                     <div className="flex gap-2 items-center text-lg">
                                         <svg className="w-[2%]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
