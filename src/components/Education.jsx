@@ -1,20 +1,17 @@
 import React, {useEffect, useState} from 'react';
+import { experience_service } from "../services/experience.service.js";
 
 const Education = () => {
-    const [education, setEducations] = useState([]);
+    const [education, setEducation] = useState([]);
 
     useEffect(() => {
-        fetchEducations();
+        fetchEducation();
     }, []);
 
-    const fetchEducations = async () => {
+    const fetchEducation = async () => {
         try {
-            const response = await fetch('http://localhost:3001/education'); // Replace with your actual backend API URL
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            const data = await response.json();
-            setEducations(data);
+            const response = await experience_service.getEducationExperiences();
+            setEducation(response.data);
         } catch (error) {
             console.error('Fetch error:', error);
         }
