@@ -1,23 +1,29 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Sidebar from "../components/Sidebar.jsx";
 import Navbar from "../components/Navbar.jsx";
 import Education from "../components/Education.jsx";
 import ProfessionalExperiences from "../components/ProfessionalExperiences.jsx";
 
 const Experiences = () => {
-    const education = [
-        {
-            "school": "EPITECH - European Institute of Technology",
-            "degree": "MSc Pro",
-            "year": "Octobre 2023 - Juillet 2025",
-            "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Epitech.png"
-        },{
-            "school": "Aix-Marseille Université",
-            "degree": "Licence d'informatique",
-            "year": "Septembre 2019 - Juin 2023",
-            "image_url": "https://upload.wikimedia.org/wikipedia/fr/thumb/7/73/Univ_Aix-Marseille_-_Sciences.svg/1200px-Univ_Aix-Marseille_-_Sciences.svg.png"
+
+    const [experience, setExperience] = useState([]);
+
+    useEffect(() => {
+        fetchExperience();
+    }, []);
+
+    const fetchExperience = async () => {
+        try {
+            const response = await fetch('http://localhost:3001/experience'); // Replace with your actual backend API URL
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const data = await response.json();
+            setExperience(data);
+        } catch (error) {
+            console.error('Fetch error:', error);
         }
-    ]
+    };
 
     return (
         <div className="grid grid-cols-[1fr_3fr]">
