@@ -23,7 +23,7 @@ const Portfolio = () => {
             ],
             link: "https://global-uploads.webflow.com/5ec87155c4dfffd15d04062a/6281a2be90c298531fd31bd3_illustration-dataflow-datapipeline.gif",
             github_link: "https://github.com/ycncy/LGM-Data",
-            organisation_description: "Le but du projet de fin de Licence était de créer une plateforme de suivi et paris (fictifs) sur des matchs d'e-sport. Nous avons créés une application web et une application mobile. Les utilisateurs peuvent parier sur le matchs d'e-sport sans risquer de l'argent réel, ce qui rend ces plateformes accessibles et attrayantes pour un large public. Les mini-jeux en ligne offrent quant à eux un divertissement supplémentaire et une occasion de gagner des points ou des récompenses virtuelles.",
+            organization_description: "Le but du projet de fin de Licence était de créer une plateforme de suivi et paris (fictifs) sur des matchs d'e-sport. Nous avons créés une application web et une application mobile. Les utilisateurs peuvent parier sur le matchs d'e-sport sans risquer de l'argent réel, ce qui rend ces plateformes accessibles et attrayantes pour un large public. Les mini-jeux en ligne offrent quant à eux un divertissement supplémentaire et une occasion de gagner des points ou des récompenses virtuelles.",
             github_org_link: "https://github.com/LGM-APP",
         },
         {
@@ -42,7 +42,7 @@ const Portfolio = () => {
             ],
             link: "../../public/apprentissage.png",
             github_link: "https://github.com/ycncy/ImageClassifier",
-            organisation_description: "",
+            organization_description: "",
             github_org_link: "",
         },
         {
@@ -58,7 +58,7 @@ const Portfolio = () => {
             ],
             link: "https://www.makery.info/wp-content/uploads/2015/08/ao%C3%BBt-01-2015-2330.gif",
             github_link: "https://github.com/ycncy/FireFighters",
-            organisation_description: "",
+            organization_description: "",
             github_org_link: "",
         },
         {
@@ -78,7 +78,7 @@ const Portfolio = () => {
             ],
             link: "../../public/flowers.png",
             github_link: "https://github.com/ycncy/flowers",
-            organisation_description: "",
+            organization_description: "",
             github_org_link: "",
         },
         {
@@ -95,7 +95,7 @@ const Portfolio = () => {
             ],
             link: "../../public/reseaux.jpeg",
             github_link: "https://github.com/ycncy/Microblogage",
-            organisation_description: "",
+            organization_description: "",
             github_org_link: "",
         }
     ];
