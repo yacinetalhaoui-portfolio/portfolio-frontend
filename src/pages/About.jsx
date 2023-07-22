@@ -2,6 +2,7 @@ import Sidebar from "../components/Sidebar.jsx";
 import Navbar from "../components/Navbar.jsx";
 import Skills from "../components/Skills.jsx";
 import Education from "../components/Education.jsx";
+import React from "react";
 
 const About = () => {
     return (
@@ -10,7 +11,10 @@ const About = () => {
             <div className=" overflow-y-scroll">
                 <Navbar/>
                 <div className="flex flex-col p-10 gap-8">
-                    <h1 className="text-4xl font-bold text-white">Qui suis-je ?</h1>
+                    <div>
+                        <h1 className="text-4xl font-bold text-white">Qui suis-je ?</h1>
+                        <hr className="mt-4 border-t-2 border-gray-300 w-[55%]"/>
+                    </div>
                     <p className="text-[#7A7C80] text-xl w-[90%]">
                         Je suis étudiant en L3 Informatique à Marseille et j'ai récemment été accepté dans le parcours
                         MSc Pro en alternance à Epitech, je suis à la recherche d'une alternance de 24 mois commençant à
