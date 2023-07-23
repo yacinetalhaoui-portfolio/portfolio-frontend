@@ -16,15 +16,14 @@ const About = () => {
                         <hr className="mt-4 border-t-2 border-gray-300 w-[55%]"/>
                     </div>
                     <p className="text-[#7A7C80] text-xl w-[90%]">
-                        Je suis étudiant en L3 Informatique à Marseille et j'ai récemment été accepté dans le parcours
-                        MSc Pro en alternance à Epitech, je suis à la recherche d'une alternance de 24 mois commençant à
-                        partir du 21 août 2023.
+                        J'ai récemment obtenu une Licence d'informatique à l'université d'Aix-Marseille et je suis actuellement étudiant en MSc Pro à Epitech Paris.
+                        En parallèle de mes études, je travaille en tant que Data Engineer en alternance chez Affluences, basé à Paris, France, depuis septembre 2023.
                         <br></br>
                         <br></br>
                         La data science est le domaine qui m'inspire le plus. J'aime la combinaison de compétences
                         analytiques et de créativité qui permet de découvrir des tendances et des modèles cachés dans
                         les données. Pour moi, le défi de résoudre des problèmes complexes en utilisant des techniques
-                        de data science est ce qui rend ce domaine si passionnant
+                        de data science est ce qui rend ce domaine si passionnant.
                         <br></br>
                         <br></br>
                         Le développement logiciel est un autre domaine qui me passionne énormément. J'aime le processus
