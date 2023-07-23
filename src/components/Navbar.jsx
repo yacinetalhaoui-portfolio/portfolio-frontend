@@ -1,10 +1,11 @@
+import {Link} from "react-router-dom";
+
 const Navbar = () => {
     return (
         <div className="text-[#7A7C80] text-xl flex justify-around items-center text-center h-32">
-            <a className="hover:text-white transition ease-in" href="/about">À propos de moi</a>
-            <a className="hover:text-white transition ease-in" href="/experiences">Expériences</a>
-            <a className="hover:text-white transition ease-in" href="/portfolio">Portfolio</a>
-            <a className="hover:text-white transition ease-in" href="/contact">Contact</a>
+            <Link className="hover:text-white transition ease-in" to="/about">À propos de moi</Link>
+            <Link className="hover:text-white transition ease-in" to="/experiences">Expériences</Link>
+            <Link className="hover:text-white transition ease-in" to="/portfolio">Portfolio</Link>
         </div>
     );
 };

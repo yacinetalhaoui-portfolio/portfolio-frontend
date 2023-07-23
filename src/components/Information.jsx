@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 const Information = () => {
     return (
         <div className="text-secondary flex flex-col gap-2 justify-center text-center">
@@ -5,8 +7,8 @@ const Information = () => {
             <h2 className="text-secondary text-2xl">Data Engineer.</h2>
             <p className="text-xl">Paris, France.</p>
             <div className="space-x-6 text-2xl">
-                <a className="hover:text-white transition ease-in" href="https://www.linkedin.com/in/yacine-talhaoui-3b8bba241/"><i className="fab fa-linkedin"></i></a>
-                <a className="hover:text-white transition ease-in" href="https://github.com/ycncy"><i className="fab fa-github"></i></a>
+                <Link className="hover:text-white transition ease-in" to="https://www.linkedin.com/in/yacine-talhaoui-3b8bba241/"><i className="fab fa-linkedin"></i></Link>
+                <Link className="hover:text-white transition ease-in" to="https://github.com/ycncy"><i className="fab fa-github"></i></Link>
             </div>
         </div>
     );

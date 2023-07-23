@@ -1,5 +1,5 @@
 import React from "react";
-import {useLocation} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import Sidebar from "./Sidebar.jsx";
 import Navbar from "./Navbar.jsx";
 
@@ -14,7 +14,7 @@ const Project = () => {
             <div className="h-screen overflow-y-scroll">
                 <Navbar/>
                 <div className="my-10 px-10">
-                    <a href={project.github_link} className="text-white text-3xl text-left">
+                    <Link to={project.github_link} className="text-white text-3xl text-left">
                         <div className="flex gap-2 items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
                                 <g fill="#36c">
@@ -25,7 +25,7 @@ const Project = () => {
                             <p>{project.name}</p>
                         </div>
                         <hr className="my-4 border-t-2 border-gray-300 w-[60%]"/>
-                    </a>
+                    </Link>
                     <div className="flex flex-col gap-5">
                         <div className="flex flex-col gap-5">
                             <span className="text-secondary text-2xl">Contexte : {project.context}</span>
@@ -38,7 +38,7 @@ const Project = () => {
                             )}
                             <span className="text-secondary text-xl">{project.description}</span>
                             {project.github_org_link !== "" && (
-                                <a href={project.github_org_link} className="text-white text-2xl text-left">
+                                <Link to={project.github_org_link} className="text-white text-2xl text-left">
                                     <div className="flex gap-2 items-center text-lg">
                                         <svg className="w-[2%]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
                                             <g fill="#36c">
@@ -48,7 +48,7 @@ const Project = () => {
                                         </svg>
                                         <p>Lien vers la page Github de l'organisation</p>
                                     </div>
-                                </a>
+                                </Link>
                             )}
                             <p className="text-white text-2xl text-left">Technologies et outils utilisés</p>
                             <div className="flex w-[80%] 2big-desktop:w-[30%] big-desktop:w-[45%] mid-tablet:w-[50%] gap-6 rounded">
