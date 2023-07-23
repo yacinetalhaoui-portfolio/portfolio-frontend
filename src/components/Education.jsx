@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { experience_service } from "../services/experience.service.js";
+import Loader from "./Loader.jsx";
 
 const Education = () => {
     const [education, setEducation] = useState([]);
@@ -16,6 +17,18 @@ const Education = () => {
             console.error('Fetch error:', error);
         }
     };
+
+    if (education.length === 0) {
+        return (
+            <div className="flex flex-col p-10 gap-16 w-[90%]">
+                <div>
+                    <h1 className="text-4xl font-bold text-white">Expériences universitaires</h1>
+                    <hr className="mt-4 border-t-2 border-gray-300 w-[80%]"/>
+                </div>
+                <Loader/>
+            </div>
+        )
+    }
 
     return (
         <div className="flex flex-col p-10 gap-16 w-[90%]">

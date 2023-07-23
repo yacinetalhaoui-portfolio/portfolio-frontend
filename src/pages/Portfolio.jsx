@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar.jsx";
 import {Link} from "react-router-dom";
 import {useEffect, useState} from "react";
 import {project_service} from "../services/project.service.js";
+import Loader from "../components/Loader.jsx";
 
 const Portfolio = () => {
 
@@ -21,9 +22,22 @@ const Portfolio = () => {
         }
     }
 
+    if (projects.length === 0) {
+        return (
+            <div className="grid max-h-screen grid-cols-[1fr_3fr]">
+                <Sidebar/>
+                <div className="h-screen overflow-y-scroll">
+                    <Navbar/>
+                    <h1 className="text-white text-3xl pb-8 text-center">Projets</h1>
+                    <Loader/>
+                </div>
+            </div>
+        )
+    }
+
     return (
         <div className="grid max-h-screen grid-cols-[1fr_3fr]">
-                <Sidebar />
+            <Sidebar/>
             <div className="h-screen overflow-y-scroll">
                 <Navbar/>
                 <div className=" flex flex-col gap-10">
@@ -31,8 +45,10 @@ const Portfolio = () => {
                     <div className="desktop:grid desktop:grid-cols-2 gap-10 w-[80%] justify-items-center
                     items-center m-auto py-10 justify-items-center tablet:flex tablet:flex-col">
                         {projects.map((project, index) => (
-                            <Link to={project.name} state={project} key={index} className="relative transition-ease-in duration-300 hover:scale-105">
-                                <img className="w-[60vh] h-[35vh] rounded-lg object-cover" src={project.link} alt="Project image"/>
+                            <Link to={project.name} state={project} key={index}
+                                  className="relative transition-ease-in duration-300 hover:scale-105">
+                                <img className="w-[60vh] h-[35vh] rounded-lg object-cover" src={project.link}
+                                     alt="Project image"/>
                                 <div
                                     className="absolute inset-0 rounded-lg flex text-center items-center justify-center bg-black bg-opacity-50 text-white">
                                     <span className="text-lg">{project.name}</span>
