@@ -41,7 +41,6 @@ const Portfolio = () => {
             <div className="h-screen overflow-y-scroll">
                 <Navbar/>
                 <div className=" flex flex-col gap-10">
-                    <h1 className="text-white text-3xl text-center">Projets</h1>
                     <div className="desktop:grid desktop:grid-cols-2 gap-10 w-[80%] justify-items-center
                     items-center m-auto py-10 justify-items-center tablet:flex tablet:flex-col">
                         {projects.map((project, index) => (
