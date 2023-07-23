@@ -39,10 +39,10 @@ const ProfessionalExperiences = () => {
             {experience.map((item, index) => (
                 <div key={index} className="flex flex-col gap-4">
                     <div className="flex flex-col">
-                        <img src={item.image_url} alt={item.company} className="w-52 h-auto mb-6 fill-white"/>
-                        <h1 className="text-xl text-white">{item.company}, {item.job}</h1>
-                        <h3 className="text-lg text-secondary">{item.year}</h3>
-                        <h3 className="text-lg text-secondary">{item.description}</h3>
+                        <img src={item.image_url} alt={item.company} className={item.company === "BECOMTECH" ? "w-52 h-auto mb-6 invert" : "w-52 h-auto mb-6  "}/>
+                        <h1 className="text-xl text-white">{item.company}, {item.title}</h1>
+                        <h3 className="text-lg text-secondary">{item.date}, {item.city}</h3>
+                        <h3 className="text-lg text-secondary mt-6">{item.responsabilities}</h3>
                     </div>
                 </div>
             ))}

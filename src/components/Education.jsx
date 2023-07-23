@@ -39,7 +39,7 @@ const Education = () => {
             {education.map((item, index) => (
                 <div key={index} className="flex flex-col gap-4">
                     <div className="flex flex-col w-full">
-                        <img src={item.image_url} alt={item.school} className="w-48 mb-6"/>
+                        <img src={item.image_url} alt={item.school} className="w-48 mb-6 "/>
                         <h1 className="text-xl text-white">{item.school}</h1>
                         <h2 className="text-lg text-secondary">{item.degree}</h2>
                         <h3 className="text-lg text-secondary">{item.year}</h3>
