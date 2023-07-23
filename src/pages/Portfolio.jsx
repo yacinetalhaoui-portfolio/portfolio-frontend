@@ -28,7 +28,6 @@ const Portfolio = () => {
                 <Sidebar/>
                 <div className="h-screen overflow-y-scroll">
                     <Navbar/>
-                    <h1 className="text-white text-3xl pb-8 text-center">Projets</h1>
                     <Loader/>
                 </div>
             </div>
