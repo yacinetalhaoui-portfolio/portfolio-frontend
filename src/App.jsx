@@ -13,6 +13,8 @@ const App = () => {
 
     const secretRoute = process.env.SECRET_ROUTE;
 
+    console.log(secretRoute);
+
     return (
         <div className="bg-[#101214]">
             <BrowserRouter>
