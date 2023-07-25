@@ -11,8 +11,8 @@ const Experiences = () => {
             <Sidebar />
             <div className="h-screen overflow-y-scroll">
                 <Navbar/>
-                <Education/>
                 <ProfessionalExperiences/>
+                <Education/>
             </div>
         </div>
     );
