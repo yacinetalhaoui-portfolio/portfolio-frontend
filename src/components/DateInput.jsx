@@ -6,11 +6,6 @@ const DateInput = ({ value, onChange }) => {
         onChange({ ...value, month });
     };
 
-    const handleYearChange = (e) => {
-        const year = e.target.value;
-        onChange({ ...value, year });
-    };
-
     return (
         <div className="flex space-x-2">
             <input

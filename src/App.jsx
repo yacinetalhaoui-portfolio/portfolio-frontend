@@ -10,6 +10,9 @@ import AddExperience from "./pages/admin/AddExperience.jsx"
 import Admin from "./pages/Admin.jsx";
 
 const App = () => {
+
+    const secretRoute = process.env.SECRET_ROUTE;
+
     return (
         <div className="bg-[#101214]">
             <BrowserRouter>
@@ -19,10 +22,10 @@ const App = () => {
                     <Route path="/portfolio" element={<Portfolio/>}/>
                     <Route path="/portfolio/:name" element={<Project/>}></Route>
                     <Route path="/experiences" element={<Experiences/>}></Route>
-                    <Route path="/admin" element={<Admin/>}></Route>
-                    <Route path="/admin/add-project" element={<AddProject/>}></Route>
-                    <Route path="/admin/add-experience" element={<AddExperience/>}></Route>
-                    <Route path="/admin/add-education" element={<AddEducation/>}></Route>
+                    <Route path={`/${secretRoute}`} element={<Admin/>}></Route>
+                    <Route path={`/${secretRoute}/add-project`} element={<AddProject/>}></Route>
+                    <Route path={`/${secretRoute}/add-experience`} element={<AddExperience/>}></Route>
+                    <Route path={`/${secretRoute}/add-education`} element={<AddEducation/>}></Route>
                 </Routes>
             </BrowserRouter>
         </div>
