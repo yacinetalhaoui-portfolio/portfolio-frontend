@@ -11,7 +11,7 @@ import Admin from "./pages/Admin.jsx";
 
 const App = () => {
 
-    const secretRoute = process.env.SECRET_ROUTE;
+    const secretRoute = import.meta.env.VITE_REACT_SECRET_ROUTE;
 
     return (
         <div className="bg-[#101214]">
