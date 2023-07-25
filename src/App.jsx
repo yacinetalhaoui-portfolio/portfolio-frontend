@@ -13,8 +13,6 @@ const App = () => {
 
     const secretRoute = import.meta.env.VITE_REACT_SECRET_ROUTE;
 
-    console.log(secretRoute);
-
     return (
         <div className="bg-[#101214]">
             <BrowserRouter>
