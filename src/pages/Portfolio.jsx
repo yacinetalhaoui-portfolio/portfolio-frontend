@@ -45,7 +45,7 @@ const Portfolio = () => {
                         {projects.map((project, index) => (
                             <Link to={project.name} state={project} key={index}
                                   className="relative transition-ease-in duration-300 hover:scale-105">
-                                <img className="w-[60vh] h-[35vh] rounded-lg object-cover" src={project.link}
+                                <img className="w-[60vh] h-[35vh] rounded-lg object-cover" src={project.image_url}
                                      alt="Project image"/>
                                 <div
                                     className="absolute inset-0 rounded-lg flex text-center items-center justify-center bg-black bg-opacity-50 text-white">

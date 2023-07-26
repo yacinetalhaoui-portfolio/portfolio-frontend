@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import { experience_service } from "../services/experience.service.js";
 import Loader from "./Loader.jsx";
+import { date_service } from "../services/date.service.js";
+import apiService from "../services/api.service.js";
 
 const Education = () => {
     const [education, setEducation] = useState([]);
@@ -42,7 +44,7 @@ const Education = () => {
                         <img src={item.image_url} alt={item.school} className="w-48 mb-6 "/>
                         <h1 className="text-xl text-white">{item.school}</h1>
                         <h2 className="text-lg text-secondary">{item.degree}</h2>
-                        <h3 className="text-lg text-secondary">{item.year}</h3>
+                        <h3 className="text-lg text-secondary">{date_service.createDateText(item.begin_date, item.end_date)}</h3>
                     </div>
                 </div>
             ))}
