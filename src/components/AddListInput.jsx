@@ -24,8 +24,8 @@ const AddListInput = ({ onListUpdate }) => {
     };
 
     return (
-        <div className="p-4">
-            <div className="flex space-x-2">
+        <div>
+            <div className="flex space-x-2 text-black">
                 <input
                     type="text"
                     className="border border-gray-300 rounded-lg p-2 flex-grow"
