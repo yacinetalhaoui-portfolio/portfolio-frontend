@@ -83,7 +83,7 @@ const AddExperience = () => {
                     </div>
                     <div className="w-96">
                         <label className="block mb-2 text-sm font-medium">
-                            Date de début
+                            Date de fin
                         </label>
                         <DateInput value={formData.end_date} onChange={handleEndDateChange}/>
                     </div>
