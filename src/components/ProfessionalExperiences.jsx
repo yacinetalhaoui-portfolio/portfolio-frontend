@@ -19,16 +19,6 @@ const ProfessionalExperiences = () => {
         }
     };
 
-    const createResponsabilitiesDiv = (responsabilities) => {
-        return (
-            <div>
-                {responsabilities.map((index, index_2) => {
-                    <p>{index}</p>
-                })}
-            </div>
-        )
-    }
-
     if (experience.length === 0) {
         return (
             <div className="flex flex-col p-10 gap-16 w-[90%]">

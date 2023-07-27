@@ -12,7 +12,6 @@ const AddListInput = ({ onListUpdate }) => {
         if (newItem.trim() !== "") {
             setItemsList([...itemsList, newItem]);
             setNewItem("");
-            onListUpdate([...itemsList, newItem]);
         }
     };
 
