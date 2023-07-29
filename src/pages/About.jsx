@@ -9,6 +9,10 @@ const About = () => {
 
     const isMobile = useMobile();
 
+    useEffect(() => {
+        document.title = "Yacine Talhaoui";
+    }, []);
+
     const renderMobile = () => {
         return (
             <div>
