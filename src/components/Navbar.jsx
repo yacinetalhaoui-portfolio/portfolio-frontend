@@ -13,7 +13,7 @@ const Navbar = () => {
 
     const renderMobile = () => {
         return (
-            <div className="fixed top-0 left-0 w-full bg-white z-50 bg-[#1e2124] text-secondary">
+            <div className="fixed top-0 left-0 w-full z-50 bg-[#1e2124] text-secondary">
                 <div
                     className="text-[#7A7C80] text-xl flex justify-between gap-8 md:flex md:justify-between md:items-center md:h-16 p-4">
                     <div className="md:hidden">
