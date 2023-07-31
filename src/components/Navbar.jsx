@@ -13,15 +13,19 @@ const Navbar = () => {
 
     const renderMobile = () => {
         return (
-            <div className="fixed top-0 left-0 w-full z-50 bg-[#1e2124] text-secondary">
+            <div className="fixed top-0 left-0 w-full z-50 bg-[#1e2124] text-secondary ">
                 <div
-                    className="text-[#7A7C80] text-xl flex justify-between gap-8 md:flex md:justify-between md:items-center md:h-16 p-4">
+                    className="text-[#7A7C80] text-xl flex justify-between gap-8 justify-between items-center md:h-16 p-4">
                     <div className="md:hidden">
                         <button onClick={handleMenuToggle} className="block text-xl">
                             ☰
                         </button>
                     </div>
                     <h1>Yacine Talhaoui</h1>
+                    <div className="space-x-6 text-2xl">
+                        <Link className="hover:text-white transition ease-in" to="https://www.linkedin.com/in/yacine-talhaoui-3b8bba241/"><i className="fab fa-linkedin"></i></Link>
+                        <Link className="hover:text-white transition ease-in" to="https://github.com/ycncy"><i className="fab fa-github"></i></Link>
+                    </div>
                 </div>
 
                 <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>

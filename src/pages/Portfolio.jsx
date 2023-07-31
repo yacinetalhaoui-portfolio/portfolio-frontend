@@ -27,11 +27,11 @@ const Portfolio = () => {
 
     const renderMobile = () => {
         return (
-            <div className="mt-14 h-screen overflow-y-scroll">
+            <div className="mt-14 min-h-screen">
                 <Navbar/>
                 <div className=" flex flex-col gap-10">
                     <div className="mb-16 flex flex-col gap-10 w-[80%] justify-items-center
-                    items-center m-auto py-10 justify-items-cente">
+                    items-center m-auto py-10 justify-items-center">
                         {projects.map((project, index) => (
                             <Link to={project.name} state={project} key={index}
                                   className="relative transition-ease-in duration-300 hover:scale-105">
