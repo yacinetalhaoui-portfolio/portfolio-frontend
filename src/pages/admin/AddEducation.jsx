@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import AddListInput from "../../components/AddListInput.jsx";
+import AddListInput from "../../components/inputs/AddListInput.jsx";
 import {redirect} from "react-router-dom";
-import DateInput from "../../components/DateInput.jsx";
+import DateInput from "../../components/inputs/DateInput.jsx";
 
 const AddEducation = () => {
     const [educationList, setEducationList] = useState([]);
