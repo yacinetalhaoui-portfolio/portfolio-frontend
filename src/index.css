@@ -9,6 +9,10 @@
     font-family: 'JetBrains Mono', monospace;
 }
 
+body {
+    background-color: #101214;
+}
+
 
 ::-webkit-scrollbar {
     width: 8px;

@@ -50,7 +50,7 @@ const About = () => {
         return (
             <div className="h-screen grid grid-cols-[1fr_3fr]">
                 <Sidebar/>
-                <div className=" overflow-y-scroll">
+                <div className="overflow-y-scroll">
                     <Navbar/>
                     <div className="flex flex-col p-10 gap-8">
                         <div>

@@ -15,7 +15,7 @@ const Experiences = () => {
 
     const renderMobile = () => {
         return (
-            <div className="mt-14 h-screen overflow-y-scroll">
+            <div className="mt-14 min-h-screen">
                 <Navbar/>
                 <ProfessionalExperiences/>
                 <Education/>
