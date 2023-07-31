@@ -17,12 +17,12 @@ const About = () => {
         return (
             <div>
                 <Navbar/>
-                <div className="flex flex-col p-10 gap-8 mt-14 min-h-screen">
+                <div className="flex flex-col p-10 gap-8 mt-14 min-h-screen max-w-screen">
                     <div>
-                        <h1 className="text-4xl font-bold text-white">Qui suis-je ?</h1>
+                        <h1 className="text-3xl font-bold text-white">Qui suis-je ?</h1>
                         <hr className="mt-4 border-t-2 border-gray-300 w-[55%]"/>
                     </div>
-                    <p className="text-[#7A7C80] text-xl w-[90%]">
+                    <p className="text-[#7A7C80] text-lg w-[90%]">
                         J'ai récemment obtenu une Licence d'informatique à l'université d'Aix-Marseille et je suis
                         actuellement étudiant en MSc Pro à Epitech Paris.
                         En parallèle de mes études, je travaille en tant que Data Engineer en alternance chez
