@@ -17,7 +17,7 @@ const About = () => {
         return (
             <div>
                 <Navbar/>
-                <div className="flex flex-col p-10 gap-8 mt-14 h-screen">
+                <div className="flex flex-col p-10 gap-8 mt-14 min-h-screen">
                     <div>
                         <h1 className="text-4xl font-bold text-white">Qui suis-je ?</h1>
                         <hr className="mt-4 border-t-2 border-gray-300 w-[55%]"/>
